@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pale-blue-primary: hsl(225, 100%, 94%);
+  --bright-blue-primary: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+p {
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  background-color: var(--pale-blue-primary);
+  padding: 35px 20px;
+  /* height: 100vh; */
+  position: relative;
+}
+
+.card {
+  width: 375px;
+  margin: 0 auto;
+  /* padding: 100px 0px; */
+}
+
+.card__img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: -4px;
+}
+
+.card__box {
+  background-color: #fff;
+  padding: 35px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card__title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card__info {
+  padding: 0 35px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.card__price {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 15px;
+  padding: 20px 20px;
+  margin-bottom: 25px;
+}
+
+.price__text {
+  text-align: left;
+  margin-right: 25px;
+  /* flex-basis: 120px; */
+}
+
+.price__title,
+.price__sub-title {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.price__title {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+a.price__change {
+  color: var(--dark-blue);
+  /* flex: 5px; */
+  text-decoration: underline;
+  font-size: 14px;
+  text-align: right;
+}
+
+.card__btn {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 0px;
+  width: 100%;
+  background-color: var(--bright-blue-primary);
+  margin-bottom: 25px;
+}
+
+.card__cancel {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
