@@ -200,7 +200,7 @@ a.price__change:active {
   }
 
   .card__img {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 
   .card__title {
@@ -233,6 +233,10 @@ a.price__change:active {
   .price__title {
     /* width: 117px; */
     margin-bottom: 6px;
+  }
+
+  a.price__change {
+    font-size: 14px;
   }
 
   .card__btn {
