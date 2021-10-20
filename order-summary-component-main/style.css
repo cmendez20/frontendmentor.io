@@ -38,10 +38,12 @@ a:visited {
 .container {
   background-image: url(./images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: top;
   background-color: var(--pale-blue-primary);
   padding: 71px 24px;
   width: 375px;
+  width: 100%;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -59,7 +61,7 @@ a:visited {
 }
 
 .card__box {
-  padding: 0 32px;
+  padding: 0 45px;
 }
 
 .card__img {
@@ -129,6 +131,12 @@ a.price__change {
   font-size: 13px;
   line-height: 17px;
   text-decoration: underline;
+  transition: color ease 0.2s;
+}
+
+a.price__change:hover,
+a.price__change:active {
+  color: hsla(245, 83%, 68%, 1);
 }
 
 .card__btn {
@@ -141,13 +149,26 @@ a.price__change {
   padding: 16px 0;
   margin-bottom: 24px;
   box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.19);
+  transition: background-color ease 0.2s;
+}
+
+.card__btn:hover {
+  background-color: hsl(245, 83%, 68%);
 }
 
 .card__cancel {
+  display: inline-block;
   font-weight: 900;
   font-size: 15px;
   line-height: 20px;
+  transition: color ease 0.2s;
+  max-width: 100%;
   margin-bottom: 32px;
+}
+
+.card__cancel:hover {
+  cursor: pointer;
+  color: #1f2e55;
 }
 
 .attribution {
@@ -160,4 +181,55 @@ a.price__change {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    background-image: url(./images/pattern-background-desktop.svg);
+  }
+
+  .card {
+    width: 450px;
+  }
+
+  .card__img {
+    margin-bottom: 45px;
+  }
+
+  .card__title {
+    font-size: 28px;
+    margin-bottom: 17px;
+  }
+
+  .card__info {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .card__price {
+    width: 354px;
+    padding: 25px 24px;
+    margin-bottom: 32px;
+  }
+
+  .price__left-side {
+    width: 160px;
+  }
+
+  .price__title,
+  .price__sub-title {
+    font-size: 16px;
+    width: 117px;
+  }
+
+  .price__title {
+    /* width: 117px; */
+    margin-bottom: 6px;
+  }
+
+  .card__btn {
+    padding: 15px 0;
+    width: 354px;
+    margin-bottom: 32px;
+  }
 }
