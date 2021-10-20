@@ -195,6 +195,10 @@ a.price__change:active {
     width: 450px;
   }
 
+  .card__box {
+    padding: 0 48px;
+  }
+
   .card__img {
     margin-bottom: 45px;
   }
