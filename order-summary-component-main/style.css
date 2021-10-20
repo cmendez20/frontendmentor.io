@@ -200,7 +200,7 @@ a.price__change:active {
   }
 
   .card__img {
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   .card__title {
@@ -239,5 +239,9 @@ a.price__change:active {
     padding: 15px 0;
     width: 354px;
     margin-bottom: 32px;
+  }
+
+  .card__cancel {
+    margin-bottom: 48px;
   }
 }
