@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet-accent: hsl(277, 64%, 61%);
+
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-para: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: var(--very-dark-blue);
+}
+
+p {
+  font-size: 15px;
+}
+
+.card {
+  background-color: var(--dark-desaturated-blue);
+  margin: 88px auto;
+  width: 327px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
+}
+
+.card__box {
+  padding: 0 31.5px;
+  text-align: center;
+}
+
+.card__img-overlay {
+  background-color: var(--soft-violet-accent);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 240px;
+  margin-bottom: 40px;
+}
+
+.card__img {
+  /* mask-image: url(/images/image-header-mobile.jpg); */
+  /* background-color: var(--soft-violet-accent); */
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card__header {
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.header__highlight {
+  color: var(--soft-violet-accent);
+}
+
+.card__text {
+  color: var(--transparent-white-para);
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+
+.card__stat {
+  padding-bottom: 24px;
+}
+
+.card__stat:last-child {
+  padding-bottom: 32px;
+}
+
+.stat__number {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.stat__heading {
+  color: var(--transparent-white-stat);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--transparent-white-para);
+  padding: 18px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
