@@ -67,6 +67,7 @@ p {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
+  line-height: 32px;
 }
 
 .header__highlight {
@@ -91,7 +92,7 @@ p {
   color: var(--white);
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .stat__heading {
@@ -101,6 +102,7 @@ p {
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
   letter-spacing: 1px;
+  padding: 5px 0;
 }
 
 /* FOOTER */
