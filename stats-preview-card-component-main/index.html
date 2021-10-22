@@ -23,13 +23,18 @@
   </head>
   <body>
     <section class="card">
-      <!-- <div class="card__img"></div> -->
       <div class="card__img-overlay">
-        <img
-          src="./images/image-header-mobile.jpg"
-          class="card__img"
-          alt="People working around a table"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/images/image-header-desktop.jpg"
+          />
+          <img
+            class="card__img"
+            alt="People working around a table"
+            src="./images/image-header-mobile.jpg"
+          />
+        </picture>
       </div>
       <div class="card__box">
         <h1 class="card__header">
@@ -40,17 +45,19 @@
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <div class="card__stat">
-          <p class="stat__number">10k+</p>
-          <p class="stat__heading">companies</p>
-        </div>
-        <div class="card__stat">
-          <p class="stat__number">314</p>
-          <p class="stat__heading">templates</p>
-        </div>
-        <div class="card__stat">
-          <p class="stat__number">12m+</p>
-          <p class="stat__heading">queries</p>
+        <div class="card__stats">
+          <div class="card__stat">
+            <p class="stat__number">10k+</p>
+            <p class="stat__heading">companies</p>
+          </div>
+          <div class="card__stat">
+            <p class="stat__number">314</p>
+            <p class="stat__heading">templates</p>
+          </div>
+          <div class="card__stat">
+            <p class="stat__number">12M+</p>
+            <p class="stat__heading">queries</p>
+          </div>
         </div>
       </div>
     </section>

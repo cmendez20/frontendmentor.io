@@ -17,7 +17,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  font-family: 'Lexend Deca', sans-serif;
+  /* font-family: 'Lexend Deca', sans-serif; */
 }
 
 body {
@@ -63,7 +63,6 @@ p {
 
 .card__header {
   color: var(--white);
-  font-family: 'Inter', sans-serif;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -101,7 +100,7 @@ p {
   font-size: 12px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding: 5px 0;
 }
 
@@ -115,4 +114,69 @@ p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 1110px;
+    margin: 177px auto;
+    display: grid;
+    grid-template-columns: 1fr 540px;
+    grid-template-rows: 446px;
+  }
+
+  .card__box {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 72px 95px 72px 72px;
+    text-align: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .card__img-overlay {
+    grid-column: 2;
+    height: 446px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 0;
+  }
+
+  .card__img {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 8px;
+  }
+
+  .card__header {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .card__text {
+    margin-bottom: 72px;
+  }
+
+  .card__stats {
+    display: flex;
+    gap: 60px;
+  }
+
+  .card__stat {
+    padding-bottom: 0;
+  }
+
+  .card__stat:last-child {
+    padding-bottom: 0;
+  }
+
+  .stat__number {
+    margin-bottom: 2px;
+  }
+
+  .stat__heading {
+    padding-bottom: 0;
+  }
 }
