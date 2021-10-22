@@ -163,8 +163,7 @@ p {
 
   .card__stats {
     display: flex;
-    /* padding-right: 75px; */
-    gap: 55px;
+    gap: 58px;
   }
 
   .card__stat {
