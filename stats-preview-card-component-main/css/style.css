@@ -100,7 +100,7 @@ p {
   font-size: 12px;
   font-weight: 400;
   font-family: 'Lexend Deca', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 5px 0;
 }
 
@@ -156,12 +156,15 @@ p {
   }
 
   .card__text {
+    /* padding: 0; */
+    padding-right: 29.5px;
     margin-bottom: 72px;
   }
 
   .card__stats {
     display: flex;
-    gap: 60px;
+    /* padding-right: 75px; */
+    gap: 55px;
   }
 
   .card__stat {
