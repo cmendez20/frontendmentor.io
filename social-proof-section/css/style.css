@@ -197,12 +197,16 @@ h4 {
     padding: 20px 32px;
   }
 
+  .review:nth-child(1) {
+    transform: translateX(36px);
+  }
+
   .review:nth-child(2) {
-    transform: translateX(48px);
+    transform: translateX(72px);
   }
 
   .review:nth-child(3) {
-    transform: translateX(96px);
+    transform: translateX(108px);
   }
 
   .testimonials {
@@ -213,14 +217,15 @@ h4 {
 
   .testimonial {
     max-width: 350px;
+    max-height: 234px;
   }
 
   .testimonial:nth-child(2) {
-    transform: translate(0, 16px);
+    transform: translate(0, 32px);
   }
 
   .testimonial:nth-child(3) {
-    transform: translate(0, 32px);
+    transform: translate(0, 64px);
   }
 
   .attribution {
