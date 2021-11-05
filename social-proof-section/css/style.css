@@ -25,7 +25,9 @@ body {
   /* height: 100vh; */
 }
 
-p {
+p,
+h3,
+h4 {
   font-size: 15px;
 }
 
@@ -159,7 +161,7 @@ p {
   }
 
   .heading {
-    padding-top: 127px;
+    padding-top: 128px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
@@ -180,6 +182,7 @@ p {
 
   .reviews {
     /* padding-top: 80px; */
+    transform: translateY(18px);
     max-width: 540px;
     margin-bottom: 0;
   }
