@@ -63,7 +63,6 @@ p {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 49px;
-  padding-top: 80px;
 }
 
 .review {
@@ -179,6 +178,7 @@ p {
   }
 
   .reviews {
+    padding-top: 80px;
     max-width: 540px;
     margin-bottom: 0;
   }
