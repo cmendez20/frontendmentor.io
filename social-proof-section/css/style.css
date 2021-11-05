@@ -159,7 +159,7 @@ p {
   }
 
   .heading {
-    /* padding-top: 127px; */
+    padding-top: 127px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
@@ -167,6 +167,7 @@ p {
   }
 
   .hero {
+    padding-top: 0;
     max-width: 435px;
     margin-bottom: 0;
   }
@@ -178,7 +179,7 @@ p {
   }
 
   .reviews {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     max-width: 540px;
     margin-bottom: 0;
   }
