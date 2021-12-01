@@ -1,0 +1,25 @@
+.app-img-box {
+  margin: 0;
+  width: 100%;
+  background-color: $black;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.app-img-bg {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.app-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  display: block;
+  max-width: 208px;
+  margin: 0 auto;
+  transform: translate(-50%, -98px);
+}

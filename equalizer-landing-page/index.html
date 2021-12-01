@@ -22,7 +22,7 @@
     <title>Frontend Mentor | Equalizer landing page</title>
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <img src="./assets/logo.svg" alt="equalizer logo" class="logo" />
 
       <header>
@@ -34,20 +34,32 @@
           control, reverb, and more!
         </p>
       </header>
+    </section>
 
-      <main>
-        <img
-          src="./assets/illustration-app.png"
-          alt="app dashboard on iPhone"
-          class="app-image"
-        />
-      </main>
+    <main class="app-img-box">
+      <img src="/assets/bg-pattern-2.svg" alt="" class="app-img-bg" />
+      <img
+        src="./assets/illustration-app.png"
+        alt="app dashboard on iPhone"
+        class="app-image"
+      />
+    </main>
 
-      Premium EQ Get expert-level control with a robust equalizer, volume mixer,
-      and spatial audio. Take your listening experience to a whole new level and
-      access all our incredible features! $4 / month iOS Download Android
-      Download All rights reserved © Equalizer 2021 Have any problems? Contact
-      us via social media or email us at equalizer@example.com
-    </div>
+    <section class="cta-section">
+      <div class="cta-section-box">
+        <h2>Premium EQ</h2>
+        <p class="body-text-sm">
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level and
+          access all our incredible features!
+        </p>
+        <div class="cta-section__price-box">
+          <p class="cta-section__price body-text-bg"><span>$4</span> / month</p>
+        </div class="cta-section__price-box">
+      </div>
+    </section>
+
+    iOS Download Android Download All rights reserved © Equalizer 2021 Have any
+    problems? Contact us via social media or email us at equalizer@example.com
   </body>
 </html>

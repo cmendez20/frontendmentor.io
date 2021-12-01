@@ -1,0 +1,38 @@
+.cta-section {
+  background-color: $red;
+  color: $white;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 48px 36px;
+  transform: translateY(-40px);
+}
+
+.cta-section-box {
+  max-width: 302px;
+}
+
+.cta-section h2 {
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  margin-bottom: 36px;
+}
+
+.cta-section__price-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 52px;
+}
+
+.cta-section__price {
+}
+
+.cta-section__price > span:nth-child(1) {
+  font-size: 65px;
+  font-weight: 700;
+
+  // transform: translateY(500px);
+}
