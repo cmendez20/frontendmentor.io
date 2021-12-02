@@ -2,10 +2,10 @@
   background-color: $red;
   color: $white;
   width: 100%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-radius: 12px;
   padding: 48px 36px;
   transform: translateY(-40px);
+  margin-bottom: -40px;
 }
 
 .cta-section-box {
@@ -16,23 +16,29 @@
   margin-bottom: 12px;
 }
 
-.cta-section p {
+.cta-section-box p {
   margin-bottom: 36px;
 }
 
 .cta-section__price-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 52px;
+  height: 52px;
+  position: relative;
+  margin-bottom: 32px;
 }
 
-.cta-section__price {
+.cta_section__price {
+  height: 52px;
 }
 
-.cta-section__price > span:nth-child(1) {
+.price-main {
   font-size: 65px;
   font-weight: 700;
+}
 
-  // transform: translateY(500px);
+.price-month {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 33%;
+  // transform: translateY(-70%);
 }
