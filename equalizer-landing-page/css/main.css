@@ -72,6 +72,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 376px) {
+  .container {
+    max-width: 690px;
+  }
+}
+
 .btn {
   display: inline-block;
   border-radius: 12px;
@@ -88,6 +94,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 296px;
+  font-weight: 700;
 }
 
 .btn svg {
@@ -114,17 +121,48 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(/assets/bg-pattern-1.svg), url(/assets/bg-main-tablet.png);
+    background-position: top -45px right -45px, top -175px right -375px;
+  }
+}
+
 .logo {
   padding-top: 40px;
   margin-bottom: 64px;
+}
+
+@media screen and (min-width: 376px) {
+  .logo {
+    margin-bottom: 95px;
+  }
 }
 
 .header-title {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 376px) {
+  .header-title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.73px;
+    max-width: 520px;
+    margin-bottom: 28px;
+  }
+}
+
 header p {
   margin-bottom: 166px;
+}
+
+@media screen and (min-width: 376px) {
+  header p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 455px;
+  }
 }
 
 .app-img-box {
@@ -134,6 +172,13 @@ header p {
   position: relative;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+@media screen and (min-width: 376px) {
+  .app-img-box {
+    max-width: 696px;
+    margin: 0 auto;
+  }
 }
 
 .app-img-bg {
@@ -154,15 +199,33 @@ header p {
           transform: translate(-50%, -98px);
 }
 
+@media screen and (min-width: 376px) {
+  .app-image {
+    top: 0;
+    left: 25%;
+    max-width: 270px;
+  }
+}
+
 .cta-section {
   background-color: #fa7453;
   color: #fcfaf9;
   width: 100%;
   border-radius: 12px;
-  padding: 48px 36px;
+  padding: 48px 48px;
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
   margin-bottom: -40px;
+}
+
+@media screen and (min-width: 376px) {
+  .cta-section {
+    max-width: 399px;
+    position: absolute;
+    top: 55%;
+    left: 300px;
+    margin-bottom: 86px;
+  }
 }
 
 .cta-section-box {
@@ -173,8 +236,21 @@ header p {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 376px) {
+  .cta-section h2 {
+    font-size: 32px;
+  }
+}
+
 .cta-section-box p {
   margin-bottom: 36px;
+}
+
+@media screen and (min-width: 376px) {
+  .cta-section-box p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .cta-section__price-box {

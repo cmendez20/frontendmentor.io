@@ -5,4 +5,8 @@ body {
 .container {
   max-width: 327px;
   margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    max-width: 690px;
+  }
 }

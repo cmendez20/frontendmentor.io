@@ -5,6 +5,11 @@
   position: relative;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+
+  @include breakpoint(tablet) {
+    max-width: 696px;
+    margin: 0 auto;
+  }
 }
 
 .app-img-bg {
@@ -22,4 +27,11 @@
   max-width: 208px;
   margin: 0 auto;
   transform: translate(-50%, -98px);
+
+  @include breakpoint(tablet) {
+    top: 0;
+    left: 25%;
+    max-width: 270px;
+    // transform: translate(-150%, -98px);
+  }
 }
