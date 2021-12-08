@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  color: $white;
+  font-family: inherit;
+  font-weight: 900;
+}
+
+.btn--blue {
+  background-color: $aqua;
+
+  &:hover {
+    background-color: $baby-blue;
+  }
+}
+
+.btn--purple {
+  background-color: $dark-purple;
+
+  &:hover {
+    background-color: $light-purple;
+  }
+}

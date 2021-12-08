@@ -1,0 +1,59 @@
+.hero {
+  // max-width: 375px;
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 54px;
+  }
+
+  &__images {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__image {
+    height: 153px;
+    width: 414px;
+    margin-bottom: 48px;
+    overflow-x: hidden;
+  }
+
+  &__text {
+    padding: 0 24px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  &__header {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 290px;
+    font-size: 40px;
+    line-height: 44px;
+    color: $black;
+    font-weight: 900;
+    margin-bottom: 24px;
+  }
+
+  &__para {
+    margin: 0 auto;
+    font-size: 16px;
+    color: $gray;
+    margin-bottom: 32px;
+    line-height: 26px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.btn--blue span {
+  color: $baby-blue;
+}

@@ -1,0 +1,43 @@
+.footer {
+  background-image: linear-gradient(
+      rgba(77, 151, 169, 0.9),
+      rgba(77, 151, 169, 0.9)
+    ),
+    url('/assets/mobile/image-footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -28px;
+  padding: 92px 15px 72px 15px;
+  background-color: $aqua;
+
+  &__header {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: $white;
+    margin-bottom: 24px;
+  }
+
+  &__para {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $white;
+    margin-bottom: 32px;
+  }
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-div button {
+  width: 193px;
+  margin: 0 auto;
+
+  & span {
+    color: $light-purple;
+  }
+}
