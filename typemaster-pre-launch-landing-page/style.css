@@ -1,0 +1,108 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+
+:root {
+  --clr-primary-900: #162542;
+  --clr-primary-700: #f16718;
+  --clr-neutral-500: #7b8bad;
+  --clr-neutral-300: #ff9b62;
+  --clr-neutral-200: #e8eff2;
+  --clr-white: #ffffff;
+
+  --ff-barlow: 'Barlow', sans-serif;
+  --fw-bold: 900;
+  --fw-base: 500;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height & font sizes
+  5. Improve text rendering
+*/
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+}
+
+/*
+  6. Improve media defaults
+*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+
+#root,
+#__next {
+  isolation: isolate;
+}
