@@ -47,17 +47,15 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-barlow);
 }
 
 html {
   --14px: 0.875rem;
   --15px: 0.9375rem;
   --16px: 1rem;
-  --17px: 1.0625rem;
-  --18px: 1.125rem;
-  --19px: 1.1875rem;
-  --20px: 1.25rem;
-  --21px: 1.3125rem;
+  --32px: 2rem;
+  --64px: 4rem;
 }
 
 /*
@@ -98,6 +96,33 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--clr-primary-900);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+}
+
+p,
+span {
+  color: var(--clr-neutral-500);
+}
+
+p {
+  font-size: var(--16px);
+}
+
 /*
   9. Create a root stacking context
 */
@@ -105,4 +130,91 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+.btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 0.90625rem;
+  font-weight: var(--fw-base);
+  text-transform: uppercase;
+}
+
+.btn--gray {
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-primary-900);
+}
+
+.btn--orange {
+  background-color: var(--clr-primary-700);
+  color: var(--clr-white);
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 375px;
+  padding: 1.5rem;
+  background-color: var(--clr-white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--64px);
+}
+
+.header {
+  margin-bottom: var(--64px);
+}
+
+.header p {
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  margin-bottom: 4.6875rem;
+}
+
+.gallery__image {
+  border-radius: 20px;
+}
+
+.product-info {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--64px);
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.features__logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary-700);
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.features__logo {
+  width: 25px;
+}
+
+.footer {
+  text-align: center;
+  color: var(--clr-neutral-500);
 }
